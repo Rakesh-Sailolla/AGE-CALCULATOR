@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>Age Calculator</h2>
+    <form action="/action">
+        <div class="containar">
+       <table class="main">
+        <tr class="child1">
+            <td class="lable">Date of Birth </td>
+            <td class="select1">
+
+                <select name="month" id="month" required>
+                    <option value="1" name="month">Jan</option>
+                    <option value="2"name="month">Feb</option>
+                    <option value="3" name="month">Mar</option>
+                    <option value="4" name="month">Apr</option>
+                    <option value="5" name="month">May</option>
+                    <option value="6" name="month">Jun</option>
+                    <option value="7" name="month">Jul</option>
+                    <option value="8"name="month" >Aug</option>
+                    <option value="9"name="month">Sep</option>
+                    <option value="10" name="month">Oct</option>
+                    <option value="11" name="month">Nov</option>
+                    <option value="12" name="month">Dec</option>
+
+                </select>
+            </td>
+            <td class="select2" >
+                <select name="date" id="date" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>   
+                    <option value="30">30</option>
+                    <option value="31">31</option>                 
+
+                </select>
+            </td>
+            <td class="select3">
+                <input type="text"  size="4" name="year" id="year" required maxlength="4">
+            </td>
+        </tr>
+
+        <!--row 2 for age at the date of -->
+
+        <tr class="chaild2">
+            <td class="lable">Age at the Date of</td>
+            
+        
+             <td class="select1">
+                <select name="cmonth" id="cmonth">
+                    <option value="1">Jan</option>
+                    <option value="2">Feb</option>
+                    <option value="3">Mar</option>
+                    <option value="4">Apr</option>
+                    <option value="5">May</option>
+                    <option value="6">Jun</option>
+                    <option value="7">Jul</option>
+                    <option value="8">Aug</option>
+                    <option value="9">Sep</option>
+                    <option value="10">Oct</option>
+                    <option value="11">Nov</option>
+                    <option value="12">Dec</option>
+
+                </select>
+            </td>
+            <td class="select2">
+
+                <select name="cdate" id="cdate">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>   
+                    <option value="30">30</option>
+                    <option value="31">31</option>                 
+
+                </select>
+            </td >
+             <td class="select3">
+
+                <input type="text"  size="4" name="cyear" id="cyear" maxlength="4">
+            </td>
+
+        
+
+            
+        </tr>
+        <!--row3-->
+        <tr>
+  <td colspan="4" style="text-align:center;">
+    <button type="button" onclick="calculateage()">Calculate</button>
+    <button type="button" onclick="Reset()">Reset</button>
+  </td>
+</tr>
+
+
+</table>
+       
+       
+
+
+
+
+</div>   
+
+ <div id="result">
+    <span> Your are <SPAN id="years"></SPAN>years ,<span id="months"></span> months and <span id="days"></span> days old.
+       <br>
+       <span>You were born on a <span id="dayName"></span></span>
+       <br>your Next Birth day is in
+       <span id="nextbirthday"></span> days
+       <br>
+       <span id="nextBday"></span>
+
+</div>      
+        
+        
+
+    </form>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>

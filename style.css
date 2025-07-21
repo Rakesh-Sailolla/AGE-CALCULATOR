@@ -1,0 +1,167 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    
+    
+
+}
+#result{
+    display: none;
+}
+.containar{
+    height: 300px;
+    width: 550px;
+    background-color:aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3rem;
+    border-radius: 9px;
+    color:;
+    font-size: 1.2rem;
+}
+select{
+    height: 2.5rem;
+    width: 3.5rem;
+}
+input{
+    height: 2.35rem;
+    width: 3.5rem;
+}
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+
+}
+label{
+    font-weight: 900;
+    margin-right:;
+}
+#years{
+    height: 40px;
+    width: 60px;
+    color:palevioletred;
+    font-size: 2rem;
+}
+#result{
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 20px;
+
+}
+button{
+    background-color: #264653;
+    color:white;
+    height: 50px;
+    width: 100px;
+    margin-top: 2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin: 2rem 0 0 2rem;
+}
+#months{
+    color: #ecf39e;
+    font-size: 2rem;
+}
+#days{
+    color:#b5e48c;
+    font-size: 2rem;
+}
+#dayName{
+    color: #ff99ac;
+    font-size: 1.5rem;
+}
+#nextbirthday{
+    color: #ef798a;
+    font-size: 2rem;
+}
+select{
+    font-size: 1rem;
+    font-weight: 400;
+}
+input{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: ;
+}
+@media(max-width:579px){
+    .containar{
+        height: 220px;
+    width: 320px;
+    background-color:aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3rem;
+    border-radius: 9px;
+    color:;
+    font-size: 0.8rem;
+}
+
+select{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+input{
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: ;
+
+    
+}
+button{
+    background-color: #264653;
+    color:white;
+    height: 40px;
+    width: 70px;
+    margin-top: 1rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin: 1rem 0 0 1rem;
+}
+#months{
+    color: #ecf39e;
+    font-size: 1rem;
+}
+#days{
+    color:#b5e48c;
+    font-size: 1rem;
+}
+#dayName{
+    color: #ff99ac;
+    font-size: 0.85rem;
+}
+#nextbirthday{
+    color: #ef798a;
+    font-size: 1rem;
+}
+#years{
+    color:palevioletred;
+    font-size: 1rem;
+
+}
+#result{
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 0.7rem;
+        margin-top: 20px;
+
+}
+
+}
+
+button:hover{
+    opacity: 0.7;
+}
